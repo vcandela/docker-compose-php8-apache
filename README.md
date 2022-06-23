@@ -4,6 +4,7 @@
 <h3 align="left">Despues de descargar :</h3>
 <p align="left">
 1.- Crear Carpeta "core"
+  
 2.- mover  htaccess =>   cp .htaccess core/
 </p>
 
