@@ -6,6 +6,10 @@
 1.- Crear Carpeta "core"
   
 2.- mover  htaccess =>   cp .htaccess core/
+  
+3.- docker-composer build
+  
+4.- docker-compose up -d
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
