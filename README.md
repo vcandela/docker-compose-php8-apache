@@ -7,10 +7,15 @@
   
 2.- mover  htaccess =>   cp .htaccess core/
   
-3.- docker-composer build
+3.- docker-compose build
   
 4.- docker-compose up -d
 </p>
+
+<p align="left">
+  Puedes modificar la IP del contenedor
+</p>
+
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> </p>
