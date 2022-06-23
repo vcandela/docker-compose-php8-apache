@@ -1,23 +1,21 @@
 version: '3.8'
+networks:
+  frontend:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/29
+
 services:
     php-apache:
-        container_name: web_name
-        image: vcandela/php8-apache
-        build:
-            context: ./php
-            dockerfile: Dockerfile
-        volumes:
-            - ./core:/var/www/html/
-        ports:
-            - 9090:80
-    networks:
-      net_app:
-        ipv4_address: 10.1.0.5
-
-networks:
-  net_app:
-    driver: bridge
-    ipam:
-     config:
-       - subnet: 10.1.0.0/29
-         gateway: 10.1.0.1
+      container_name: web_name
+      image: vcandela/php8-apache
+      build:
+          context: ./php
+          dockerfile: Dockerfile
+      volumes:
+          - ./core:/var/www/html/
+      ports:
+          - 9090:80
+      networks:
+          frontend:
+              ipv4_address: 172.20.0.3
